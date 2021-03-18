@@ -1,0 +1,127 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %} About Us {% endblock %}
+{% block css %}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+{% endblock %}
+
+ {% block body %}
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>This is E-Commerce Website- SamanLelo.com, grab your favourites now!!</p>
+  <p><a class="nav-link active" style="color:white;" aria-current="page" href="/shop">SamanLelo.com</a></p>
+
+<div class="row my-2 mx-3">
+<h5 style="text-align:center">SamanLelo.com is an e-commerce company headquartered in Mumbai, Maharashtra, India. The company initially focused on online book sales before expanding into other product categories such as consumer electronics, fashion, home essentials, groceries, and lifestyle products.
+
+The service competes primarily with Amazon's Indian subsidiary and domestic rival Flipkart. As of March 2017, SamanLelo.com held a 39.5% market share of India's e-commerce industry. SamanLelo.com has a dominant position in the apparel segment, bolstered by its acquisition of Myntra, and was described as being "neck and neck" with Amazon in the sale of electronics and mobile phones. SamanLelo.com also owns SPay, a mobile payments service based on the Unified Payments Interface.</h5>
+</div>
+</div>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Sagar Mishra</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Sagar Mishra is young and passionate Python coder, who has a good command in Python, HTML, CSS.</p>
+        <p>smishra787898@gmail.com</p>
+        <a href="/shop/contact"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Saurabh Oza</h2>
+        <p class="title">Art Director</p>
+        <p>Saurabh Oza is young and passionate Python coder, who has a good command in Python, HTML, CSS.</p>
+        <p>ozasaurabh@gmail.com</p>
+        <a href="/shop/contact"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Tanay Shah</h2>
+        <p class="title">Designer</p>
+        <p>Tanay Shah is young and passionate Python coder, who has a good command in Python, HTML, CSS.</p>
+        <p>shahtanay@gmail.com</p>
+        <a href="/shop/contact"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ {% endblock %}
